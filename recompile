@@ -1,0 +1,6 @@
+#!/bin/bash
+SITE_LISP=/usr/share/emacs/site-lisp
+JS2_MODE="js2-mode"
+rm ${SITE_LISP}/${JS2_MODE}.el*
+emacs --batch -f batch-byte-compile ${JS2_MODE}.el
+cp ${JS2_MODE}.elc ${SITE_LISP}
