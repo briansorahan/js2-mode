@@ -19,6 +19,9 @@ In your emacs config:
 
     (autoload 'js2-mode "js2-mode" nil t)
     (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+    ;; Uncomment the next line to use this major mode for
+    ;; executable node scripts
+    ;; (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
 See <http://code.google.com/p/js2-mode/wiki/InstallationInstructions> for
 additional details.
